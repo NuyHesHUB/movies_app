@@ -1,0 +1,38 @@
+*{margin: 0; padding: 0;}
+.container{
+    .loader{
+        width: 80%;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        &_text{
+            font-size: 40px;
+            /* color: rgb(82, 37, 204); */
+            color: #fff;
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+    .movies{
+        margin: 50px 0;
+        display: grid;
+        grid-template-columns: repeat(2,minmax(400px,1fr));
+        grid-gap: 100px;
+        padding: 50px;
+        width: 80%;/* nav를 위해 줄인다 */
+        padding-top: 70px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 1090px){
+    .container{
+        .movies{
+            grid-template-columns: 1fr;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+}

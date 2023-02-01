@@ -1,0 +1,26 @@
+.nav{
+    position: fixed;
+    right: 0;
+    top: 0; 
+    width: 20%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    padding: 50px 20px;
+    box-sizing: border-box;
+    ul{
+        list-style: none;
+        li{
+            border-bottom: 1px solid #fff;
+            padding: 10px 0;
+            a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 20px;
+                transition: .3s;
+                &:hover{
+                    color: rgb(27, 149, 176);
+                }
+            }
+        }
+    }
+}
